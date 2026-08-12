@@ -66,5 +66,18 @@ class PortfolioHealthTests(unittest.TestCase):
         self.assertNotIn("18-year Field Training Officer", index)
 
 
+    def test_stale_commendation_total_is_blocked(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        credentials = (ROOT / "credentials.html").read_text(encoding="utf-8")
+        contract = json.loads((ROOT / "portfolio_contract.json").read_text(encoding="utf-8"))
+        combined = index + " " + credentials
+        self.assertNotIn("20+ written professional commendations", combined)
+        self.assertIn("Documented professional recognition", index)
+        self.assertTrue(any(
+            re.search(pattern, "20+ written professional commendations")
+            for pattern in contract["forbidden_patterns"]
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()

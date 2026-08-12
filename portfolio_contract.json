@@ -8,7 +8,7 @@
         "19-year Field Training Officer",
         "19 years",
         "$3.2M",
-        "20+",
+        "Documented professional recognition",
         "TroyHokanson@iCloud.com"
       ]
     },
@@ -38,6 +38,7 @@
     "(?i)(?:six|6) years?.{0,60}DCECTF",
     "(?i)5,304\\s*(?:GB|gigabytes)",
     "(?i)1,238(?:\\.75)?\\s*(?:hours|hrs)",
-    "(?i)(?:certificate|certification|credential)\\s*(?:no\\.?|number|#|ID)\\s*[:#-]?\\s*[A-Z0-9-][A-Z0-9-][A-Z0-9-][A-Z0-9-]+"
+    "(?i)(?:certificate|certification|credential)\\s*(?:no\\.?|number|#|ID)\\s*[:#-]?\\s*[A-Z0-9-][A-Z0-9-][A-Z0-9-][A-Z0-9-]+",
+    "(?i)20\\+\\s*(?:written\\s+)?professional\\s+commendations"
   ]
 }
