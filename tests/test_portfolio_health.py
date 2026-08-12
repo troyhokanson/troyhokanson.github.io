@@ -49,5 +49,35 @@ class PortfolioHealthTests(unittest.TestCase):
             ))
 
 
+    def test_consolidated_public_pages_are_audited(self):
+        self.assertIn("practice.html", portfolio_health.HTML_FILES)
+        contract = json.loads((ROOT / "portfolio_contract.json").read_text(encoding="utf-8"))
+        self.assertEqual(
+            contract["production_repository"],
+            "troyhokanson/troyhokanson.github.io",
+        )
+        self.assertIn("practice.html", contract["pages"])
+
+    def test_field_training_tenure_is_current(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        practice = (ROOT / "practice.html").read_text(encoding="utf-8")
+        self.assertIn("19-year Field Training Officer", index)
+        self.assertIn("Field Training Officer from 2004–2023", practice)
+        self.assertNotIn("18-year Field Training Officer", index)
+
+
+    def test_stale_commendation_total_is_blocked(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        credentials = (ROOT / "credentials.html").read_text(encoding="utf-8")
+        contract = json.loads((ROOT / "portfolio_contract.json").read_text(encoding="utf-8"))
+        combined = index + " " + credentials
+        self.assertNotIn("20+ written professional commendations", combined)
+        self.assertIn("Documented professional recognition", index)
+        self.assertTrue(any(
+            re.search(pattern, "20+ written professional commendations")
+            for pattern in contract["forbidden_patterns"]
+        ))
+
+
 if __name__ == "__main__":
     unittest.main()
