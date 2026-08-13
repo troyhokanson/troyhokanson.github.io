@@ -20,7 +20,7 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-HTML_FILES = ("index.html", "credentials.html", "practice.html")
+HTML_FILES = ("index.html", "credentials.html", "practice.html", "evidence.html")
 
 
 class PageParser(HTMLParser):

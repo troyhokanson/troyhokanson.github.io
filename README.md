@@ -19,6 +19,7 @@ After this consolidation is merged and the production deployment is verified, th
 | Purpose | System |
 | --- | --- |
 | Public production site | This repository |
+| Public evidence provenance | `evidence.html` with stable sanitized evidence IDs |
 | Private supporting evidence | Restricted Google Drive evidence store |
 | Command view and governance notes | Notion |
 | Public-domain routing | `CNAME` → `TroyHokanson.com` |

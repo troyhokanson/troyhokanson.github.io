@@ -26,6 +26,16 @@
         "search warrants, administrative subpoenas and preservation requests",
         "explicit public-release approval"
       ]
+    },
+    "evidence.html": {
+      "required_text": [
+        "Evidence & Recognition",
+        "self-published provenance record",
+        "Exceeds Standards",
+        "Ramsey County felony conviction",
+        "20+ written commendations",
+        "Last reviewed August 13, 2026"
+      ]
     }
   },
   "forbidden_patterns": [
@@ -39,6 +49,10 @@
     "(?i)5,304\\s*(?:GB|gigabytes)",
     "(?i)1,238(?:\\.75)?\\s*(?:hours|hrs)",
     "(?i)(?:certificate|certification|credential)\\s*(?:no\\.?|number|#|ID)\\s*[:#-]?\\s*[A-Z0-9-][A-Z0-9-][A-Z0-9-][A-Z0-9-]+",
-    "(?i)20\\+\\s*(?:written\\s+)?professional\\s+commendations"
+    "(?i)20\\+\\s*(?:written\\s+)?professional\\s+commendations",
+    "\\$295,704\\.11",
+    "(?i)(?:BEC|business[ -]email[ -]compromise).{0,240}15-year federal sentence",
+    "(?i)15-year federal sentence.{0,240}(?:BEC|business[ -]email[ -]compromise)",
+    "(?i)(?:task force lead|lead examiner)"
   ]
 }

@@ -51,12 +51,14 @@ class PortfolioHealthTests(unittest.TestCase):
 
     def test_consolidated_public_pages_are_audited(self):
         self.assertIn("practice.html", portfolio_health.HTML_FILES)
+        self.assertIn("evidence.html", portfolio_health.HTML_FILES)
         contract = json.loads((ROOT / "portfolio_contract.json").read_text(encoding="utf-8"))
         self.assertEqual(
             contract["production_repository"],
             "troyhokanson/troyhokanson.github.io",
         )
         self.assertIn("practice.html", contract["pages"])
+        self.assertIn("evidence.html", contract["pages"])
 
     def test_field_training_tenure_is_current(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
@@ -77,6 +79,30 @@ class PortfolioHealthTests(unittest.TestCase):
             re.search(pattern, "20+ written professional commendations")
             for pattern in contract["forbidden_patterns"]
         ))
+
+
+    def test_evidence_page_has_stable_public_anchors(self):
+        source = (ROOT / "evidence.html").read_text(encoding="utf-8")
+        required_ids = (
+            "PR-2020-DIGITAL-FORENSICS-RESOURCE",
+            "PR-2019-RESOURCE-BUILDER",
+            "COM-2019-COMMERCIAL-BURGLARY",
+            "COM-2013-PATROL-FOLLOW-UP",
+            "COMMENDATIONS-20PLUS",
+            "CASE-BEC-360K",
+            "AWARD-PHOENIX500",
+        )
+        for evidence_id in required_ids:
+            self.assertIn(f'id="{evidence_id}"', source)
+
+    def test_evidence_page_uses_sanitized_public_sources(self):
+        source = (ROOT / "evidence.html").read_text(encoding="utf-8")
+        self.assertNotIn("drive.google.com", source)
+        self.assertNotIn("notion.", source)
+        self.assertNotIn("$295,704.11", source)
+        self.assertNotIn("15-year federal sentence", source)
+        self.assertNotIn("Supervisor:", source)
+        self.assertIn("self-published provenance record", source)
 
 
 if __name__ == "__main__":
