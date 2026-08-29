@@ -61,7 +61,6 @@
     "(?i)15-year federal sentence.{0,240}(?:BEC|business[ -]email[ -]compromise)",
     "(?i)(?:task force lead|lead examiner)",
     "(?i)(?:18|19)[- ]year Field Training Officer",
-    "(?i)Field Training Officer.{0,30}(?:18|19)[- ]year",
     "(?i)(?:FTK|Forensic Toolkit).{0,100}(?:21|25)\\\\s+hours?",
     "(?i)(?:21|25)\\\\s+hours?.{0,100}(?:FTK|Forensic Toolkit)",
     "(?i)5,(?:336|368)\\\\s*(?:GB|gigabytes)",
