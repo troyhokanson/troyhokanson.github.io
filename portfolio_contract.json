@@ -4,9 +4,13 @@
   "pages": {
     "index.html": {
       "required_text": [
-        "Twenty-five-year medically retired Minnesota detective",
-        "19-year Field Training Officer",
-        "19 years",
+        "Medically retired Minnesota detective and digital forensic examiner",
+        "25 years of sworn law-enforcement service",
+        "6.5 years in investigative assignments",
+        "5.5 years in digital forensics",
+        "Field Training Officer, 2004–2023",
+        "Independent Professional | April 2026–Present",
+        "eXp Realty and Keller Williams | June 2024–June 2026",
         "$3.2M",
         "Documented professional recognition",
         "TroyHokanson@iCloud.com"
@@ -14,10 +18,12 @@
     },
     "credentials.html": {
       "required_text": [
-        "Certified Cyber Crime Investigator",
+        "Certified Cyber Crime Investigator (CCCI)",
         "Cellebrite CCLO and CCPA",
         "98-hour supervision and management program",
-        "Supported 18 years of remote adult education"
+        "Supported 18 years of remote adult education",
+        "Forensic Toolkit (FTK) Bootcamp",
+        "disputed FTK hour count is intentionally omitted"
       ]
     },
     "practice.html": {
@@ -53,6 +59,15 @@
     "\\$295,704\\.11",
     "(?i)(?:BEC|business[ -]email[ -]compromise).{0,240}15-year federal sentence",
     "(?i)15-year federal sentence.{0,240}(?:BEC|business[ -]email[ -]compromise)",
-    "(?i)(?:task force lead|lead examiner)"
-  ]
+    "(?i)(?:task force lead|lead examiner)",
+    "(?i)(?:18|19)[- ]year Field Training Officer",
+    "(?i)Field Training Officer.{0,30}(?:18|19)[- ]year",
+    "(?i)(?:FTK|Forensic Toolkit).{0,100}(?:21|25)\\\\s+hours?",
+    "(?i)(?:21|25)\\\\s+hours?.{0,100}(?:FTK|Forensic Toolkit)",
+    "(?i)5,(?:336|368)\\\\s*(?:GB|gigabytes)",
+    "(?i)1,280(?:\\\\.75)?\\\\s*(?:hours|hrs)",
+    "(?i)referral-only"
+  ],
+  "governing_career_repository": "troyhokanson/tjh-resume-cover-cv",
+  "governing_contract_path": "PUBLIC_PROFILE_CONTRACT.json"
 }
