@@ -60,13 +60,25 @@ class PortfolioHealthTests(unittest.TestCase):
         self.assertIn("practice.html", contract["pages"])
         self.assertIn("evidence.html", contract["pages"])
 
-    def test_field_training_tenure_is_current(self):
+    def test_field_training_tenure_uses_date_range_until_duration_is_reconciled(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
         practice = (ROOT / "practice.html").read_text(encoding="utf-8")
-        self.assertIn("19-year Field Training Officer", index)
+        self.assertIn("Field Training Officer, 2004–2023", index)
         self.assertIn("Field Training Officer from 2004–2023", practice)
-        self.assertNotIn("18-year Field Training Officer", index)
+        self.assertNotRegex(index, r"(?:18|19)[- ]year Field Training Officer")
 
+
+    def test_current_public_chronology_is_visible(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn("Independent Professional | April 2026–Present", index)
+        self.assertIn("eXp Realty and Keller Williams | June 2024–June 2026", index)
+
+    def test_public_credentials_exclude_private_links_and_disputed_ftk_hours(self):
+        credentials = (ROOT / "credentials.html").read_text(encoding="utf-8")
+        self.assertNotIn("drive.google.com", credentials)
+        self.assertNotIn("docs.google.com", credentials)
+        self.assertIn("disputed FTK hour count is intentionally omitted", credentials)
+        self.assertNotRegex(credentials, r"(?:21|25)\s+hours?.{0,100}(?:FTK|Forensic Toolkit)")
 
     def test_stale_commendation_total_is_blocked(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
