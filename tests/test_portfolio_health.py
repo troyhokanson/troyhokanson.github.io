@@ -68,6 +68,14 @@ class PortfolioHealthTests(unittest.TestCase):
         self.assertNotRegex(index, r"(?:18|19)[- ]year Field Training Officer")
 
 
+    def test_homepage_uses_governing_career_headline(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        headline = (
+            "Former Detective &amp; Digital Forensic Examiner | "
+            "Public-Safety Software Training, Technical Support &amp; Evidence Workflows"
+        )
+        self.assertIn(headline, index)
+
     def test_current_public_chronology_is_visible(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
         self.assertIn("Independent Professional | April 2026–Present", index)
