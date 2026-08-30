@@ -4,7 +4,7 @@ This is the canonical production repository for [TroyHokanson.com](https://TroyH
 
 ## Repository consolidation
 
-The earlier `troy-hokanson/portfolio` repository was reviewed as a near duplicate. Its useful public-safe material is being consolidated here under these rules:
+The earlier `troy-hokanson/portfolio` repository was reviewed as a near duplicate and was made private on August 29, 2026. Any remaining useful public-safe material must be reconciled here under these rules:
 
 - preserve the established `Still Serving` visual direction and custom domain;
 - retain the automated portfolio-health workflow and privacy contract;
@@ -12,7 +12,7 @@ The earlier `troy-hokanson/portfolio` repository was reviewed as a near duplicat
 - do not migrate raw evidence, case identifiers, subject information, credential numbers, stale résumé files, or unsupported totals;
 - keep case-specific publication controlled by evidence review, sanitization and explicit public-release approval.
 
-After this consolidation is merged and the production deployment is verified, the earlier portfolio repository can be archived as read-only. The separate `fraudinvbot` and `auditorsearchbot` repositories are independent applications and are not part of this website consolidation.
+The earlier portfolio repository is not a production source and must remain private. It may be archived after any remaining public-safe material is reconciled. The separate `fraudinvbot` and `auditorsearchbot` repositories are independent applications and are not part of this website consolidation.
 
 ## Source-of-truth model
 
