@@ -84,6 +84,8 @@ class PortfolioHealthTests(unittest.TestCase):
     def test_evidence_page_has_stable_public_anchors(self):
         source = (ROOT / "evidence.html").read_text(encoding="utf-8")
         required_ids = (
+            "IMPL-2007-ALPR-TARGET-BLUE",
+            "IMPL-2016-ECU-CAPABILITY-BUILD",
             "PR-2020-DIGITAL-FORENSICS-RESOURCE",
             "PR-2019-RESOURCE-BUILDER",
             "COM-2019-COMMERCIAL-BURGLARY",
