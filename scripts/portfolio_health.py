@@ -116,6 +116,9 @@ def pass_links(pages: dict[str, PageParser], issues: list[dict[str, str]]) -> No
                 if not {"noopener", "noreferrer"}.issubset(rel):
                     add_issue(issues, "error", "links", f"{name}: target=_blank link lacks noopener noreferrer: {href}")
             parsed = urlparse(href)
+            if parsed.hostname in {"drive.google.com", "docs.google.com"}:
+                add_issue(issues, "error", "links", f"{name}: unreviewed Google Drive link is not public-safe: {href}")
+                continue
             if parsed.scheme or href.startswith("mailto:"):
                 continue
             target_name, _, fragment = href.partition("#")
