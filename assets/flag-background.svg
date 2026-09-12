@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 1000">
+<defs><polygon id="star" points="0.000000,-1.000000 0.224514,-0.309017 0.951057,-0.309017 0.363271,0.118034 0.587785,0.809017 0.000000,0.381966 -0.587785,0.809017 -0.363271,0.118034 -0.951057,-0.309017 -0.224514,-0.309017" fill="#f4f1e8"/></defs>
+<rect width="1900" height="1000" fill="#f4f1e8"/>
+<rect y="0.00000" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="153.84615" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="307.69231" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="461.53846" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="615.38462" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="769.23077" width="1900" height="76.92308" fill="#8e303b"/>
+<rect y="923.07692" width="1900" height="76.92308" fill="#8e303b"/>
+<rect width="760" height="538.46154" fill="#243954"/>
+<use href="#star" transform="translate(63.33333 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(190.00000 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(316.66667 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(443.33333 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(570.00000 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(696.66667 53.84615) scale(30.8)"/>
+<use href="#star" transform="translate(126.66667 107.69231) scale(30.8)"/>
+<use href="#star" transform="translate(253.33333 107.69231) scale(30.8)"/>
+<use href="#star" transform="translate(380.00000 107.69231) scale(30.8)"/>
+<use href="#star" transform="translate(506.66667 107.69231) scale(30.8)"/>
+<use href="#star" transform="translate(633.33333 107.69231) scale(30.8)"/>
+<use href="#star" transform="translate(63.33333 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(190.00000 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(316.66667 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(443.33333 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(570.00000 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(696.66667 161.53846) scale(30.8)"/>
+<use href="#star" transform="translate(126.66667 215.38462) scale(30.8)"/>
+<use href="#star" transform="translate(253.33333 215.38462) scale(30.8)"/>
+<use href="#star" transform="translate(380.00000 215.38462) scale(30.8)"/>
+<use href="#star" transform="translate(506.66667 215.38462) scale(30.8)"/>
+<use href="#star" transform="translate(633.33333 215.38462) scale(30.8)"/>
+<use href="#star" transform="translate(63.33333 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(190.00000 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(316.66667 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(443.33333 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(570.00000 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(696.66667 269.23077) scale(30.8)"/>
+<use href="#star" transform="translate(126.66667 323.07692) scale(30.8)"/>
+<use href="#star" transform="translate(253.33333 323.07692) scale(30.8)"/>
+<use href="#star" transform="translate(380.00000 323.07692) scale(30.8)"/>
+<use href="#star" transform="translate(506.66667 323.07692) scale(30.8)"/>
+<use href="#star" transform="translate(633.33333 323.07692) scale(30.8)"/>
+<use href="#star" transform="translate(63.33333 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(190.00000 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(316.66667 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(443.33333 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(570.00000 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(696.66667 376.92308) scale(30.8)"/>
+<use href="#star" transform="translate(126.66667 430.76923) scale(30.8)"/>
+<use href="#star" transform="translate(253.33333 430.76923) scale(30.8)"/>
+<use href="#star" transform="translate(380.00000 430.76923) scale(30.8)"/>
+<use href="#star" transform="translate(506.66667 430.76923) scale(30.8)"/>
+<use href="#star" transform="translate(633.33333 430.76923) scale(30.8)"/>
+<use href="#star" transform="translate(63.33333 484.61539) scale(30.8)"/>
+<use href="#star" transform="translate(190.00000 484.61539) scale(30.8)"/>
+<use href="#star" transform="translate(316.66667 484.61539) scale(30.8)"/>
+<use href="#star" transform="translate(443.33333 484.61539) scale(30.8)"/>
+<use href="#star" transform="translate(570.00000 484.61539) scale(30.8)"/>
+<use href="#star" transform="translate(696.66667 484.61539) scale(30.8)"/>
+</svg>
