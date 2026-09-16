@@ -63,7 +63,8 @@ class PortfolioHealthTests(unittest.TestCase):
     def test_field_training_tenure_is_current(self):
         index = (ROOT / "index.html").read_text(encoding="utf-8")
         practice = (ROOT / "practice.html").read_text(encoding="utf-8")
-        self.assertIn("19-year Field Training Officer", index)
+        self.assertIn("Field Training Officer service from 2004-2023", index)
+        self.assertNotIn("19-year Field Training Officer", index)
         self.assertIn("Field Training Officer from 2004–2023", practice)
         self.assertNotIn("18-year Field Training Officer", index)
 

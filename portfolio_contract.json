@@ -4,13 +4,12 @@
   "pages": {
     "index.html": {
       "required_text": [
-        "Twenty-five-year medically retired Minnesota detective",
-        "19-year Field Training Officer",
-        "19 years",
         "$3.2M",
         "Documented professional recognition",
         "TroyHokanson@iCloud.com",
-        "$40,000 Target + Blue corporate partnership"
+        "$40,000 Target + Blue corporate partnership",
+        "25 years with the Lakeville Police Department",
+        "Field Training Officer service from 2004-2023"
       ]
     },
     "credentials.html": {
@@ -23,9 +22,9 @@
     },
     "practice.html": {
       "required_text": [
-        "Field Training Officer from 2004–2023",
+        "Field Training Officer from 2004\u20132023",
         "search warrants, administrative subpoenas and preservation requests",
-        "explicit public-release approval"
+        "protect confidential information"
       ]
     },
     "evidence.html": {
@@ -36,9 +35,9 @@
         "$40,000 Target + Blue corporate partnership grant",
         "Electronic-crimes capability build",
         "Exceeds Standards",
-        "Ramsey County felony conviction",
         "20+ written commendations",
-        "Last reviewed August 31, 2026"
+        "Last reviewed August 31, 2026",
+        "bit-for-bit forensic image"
       ]
     }
   },
@@ -57,6 +56,7 @@
     "\\$295,704\\.11",
     "(?i)(?:BEC|business[ -]email[ -]compromise).{0,240}15-year federal sentence",
     "(?i)15-year federal sentence.{0,240}(?:BEC|business[ -]email[ -]compromise)",
-    "(?i)(?:task force lead|lead examiner)"
+    "(?i)(?:task force lead|lead examiner)",
+    "(?i)(?:18|19)[- ]year Field Training Officer"
   ]
 }

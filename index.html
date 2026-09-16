@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Troy Hokanson | Investigations, Customer Enablement and Program Implementation</title>
-  <meta name="description" content="Troy Hokanson is a medically retired Minnesota detective, digital forensic examiner, trainer, program builder and U.S. Army veteran focused on investigations, customer enablement, public safety technology and program implementation.">
+  <meta name="description" content="Troy Hokanson is an investigative professional and U.S. Army veteran with 25 years of law-enforcement service, including detective and digital forensic examiner assignments. Open to Washington-based remote work and Vancouver / Portland opportunities.">
   <link rel="canonical" href="https://TroyHokanson.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Troy Hokanson | Investigative Professional">
@@ -27,7 +27,10 @@
     .hero-wrap { border-bottom:1px solid var(--line); background:var(--navy); }
     .hero-banner { display:block; width:100%; max-width:100%; height:auto; object-fit:contain; }
     .hero { max-width:1100px; margin:auto; padding:36px 24px 48px; }
-    .hero-content { max-width:850px; }
+    .hero-content { max-width:100%; display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:36px; align-items:center; }
+    .portrait { width:280px; height:340px; overflow:hidden; border:1px solid var(--line); border-radius:8px; margin:0; }
+    .portrait img { width:100%; height:100%; object-fit:cover; object-position:50% 36%; transform:scale(1.3); transform-origin:50% 35%; display:block; }
+    @media (max-width:760px) { .hero-content { grid-template-columns:1fr; } .portrait { grid-row:1; width:220px; height:260px; } }
     .hero-kicker { color:var(--muted); font-weight:700; letter-spacing:.28em; text-transform:uppercase; font-size:.82rem; }
     .hero h1 { color:var(--gold); text-shadow:0 5px 20px #000; }
     .hero-focus { margin:0 0 18px; color:#f2cf68; font-family:Georgia,serif; font-size:clamp(1.15rem,2.5vw,1.6rem); font-weight:700; letter-spacing:.04em; }
@@ -74,23 +77,26 @@
       <img class="hero-banner" src="assets/still-serving-banner-20260912.png" width="2048" height="683" fetchpriority="high" alt="Still Serving — Veteran • Law Enforcement. Fraud &amp; Financial Crimes Investigations • Digital Forensics. Badge, American flag and gold-outlined star.">
       <header class="hero">
         <div class="hero-content">
+          <div>
           <div class="hero-kicker">Veteran • Law Enforcement • Educator</div>
           <h1>Still Serving</h1>
           <p class="hero-focus">Investigations • Digital Forensics • Customer Enablement</p>
-          <p class="sub">Twenty-five-year medically retired Minnesota detective, digital forensic examiner, 19-year Field Training Officer, remote university faculty member, U.S. Army veteran and program builder. I help people adopt complex systems, understand difficult information and perform with confidence.</p>
+          <p class="sub">My 25 years with the Lakeville Police Department included detective and digital forensic examiner assignments, along with Field Training Officer service from 2004-2023. I am a U.S. Army veteran and former remote criminal justice faculty member. I investigate complex problems, document the evidence and explain findings clearly.</p>
           <div class="cta">
             <a class="btn primary" href="#work">View selected work</a>
             <a class="btn" href="practice.html">View investigative practice</a>
             <a class="btn" href="credentials.html">View credentials</a>
             <a class="btn" href="https://linkedin.com/in/troyhokanson">LinkedIn</a>
           </div>
+          </div>
+          <figure class="portrait"><img src="assets/troy-hokanson-portrait.jpg" width="573" height="900" alt="Troy Hokanson wearing a gray jacket and blue shirt"></figure>
         </div>
       </header>
     </div>
     <section id="work">
       <div class="eyebrow">Selected Work</div>
-      <h2>One career-long pattern</h2>
-      <p class="lead">The settings changed, but the work stayed remarkably consistent: assess the need, build a practical process, train the people who will use it, remove friction and improve the outcome.</p>
+      <h2>Investigate. Document. Explain.</h2>
+      <p class="lead">My work spans fraud investigations, digital evidence, investigator training and public-safety technology. These examples show how I approach the work.</p>
       <div class="grid">
         <article class="card"><h3>Training and Onboarding</h3><p>Built structured reserve-officer and seasonal park-ranger onboarding, trained officers in the field and taught undergraduate criminal justice remotely.</p></article>
         <article class="card"><h3>Program Implementation</h3><p>Led an agency-side ALPR program funded through a $40,000 Target + Blue corporate partnership and built electronic-crimes capability around technology, documentation and investigator enablement. <a href="evidence.html#implementation-case-studies">View two implementation case studies.</a></p></article>
@@ -100,19 +106,26 @@
     </section>
     <section aria-label="Career highlights">
       <div class="grid">
-        <article class="card"><div class="proof">19 years</div><p>Field Training Officer, 2004–2023</p></article>
+        <article class="card"><div class="proof">2004-2023</div><p>Field Training Officer</p></article>
         <article class="card"><div class="proof">18 years</div><p>Remote university teaching and facilitation</p></article>
-        <article class="card"><div class="proof">$3.2M</div><p>Residential real estate sales in 2025</p></article>
+        <article class="card"><div class="proof">Graduate degree</div><p><a href="credentials.html#education">Master of Arts, Police Leadership, Administration and Education</a></p></article>
         <article class="card"><div class="proof">Verified</div><p><a href="evidence.html#COMMENDATIONS-20PLUS">Documented professional recognition</a></p></article>
+      </div>
+    </section>
+    <section id="featured-work">
+      <div class="eyebrow">Work in Practice</div><h2>Evidence and practical results</h2>
+      <div class="grid">
+        <article class="card"><h3>Digital evidence in a wire-fraud investigation</h3><p>Created a forensic image through a write blocker with FTK Imager, examined the image with AccessData Forensic Toolkit (FTK) and Internet Evidence Finder, and documented responsive artifacts for investigators.</p><a href="evidence.html#CASE-BEC-360K">Read the examination summary</a></article>
+        <article class="card"><h3>Resources for incoming investigators</h3><p>Developed a structured reference folder with preservation requests, administrative subpoenas, search-warrant templates and service-provider guidance. Acquired and configured the unit's initial Cellebrite UFED capability.</p><a href="evidence.html#IMPL-2016-ECU-CAPABILITY-BUILD">Read the implementation example</a></article>
       </div>
     </section>
     <section id="experience">
       <div class="eyebrow">Experience</div>
       <h2>Relevant career chapters</h2>
       <div class="timeline">
-        <article><h3>Lakeville Police Department</h3><p>Police Officer, Investigator, Detective, Digital Forensic Examiner and Field Training Officer (2004–2023). Supplemental assignments included SWAT, Crime Scene Unit, Reserve Liaison, Park Ranger Training Coordinator, Juvenile Traffic Diversion Instructor, ALPR, Probation Liaison and Community Engagement.</p></article>
-        <article><h3>University of Phoenix</h3><p>Remote adjunct faculty member in criminal justice. Earned Certified Advanced Facilitator status and repeated recognition for facilitation and instructional performance. <a href="evidence.html#AWARD-PHOENIX500">Evidence basis</a></p></article>
-        <article><h3>eXp Realty and Keller Williams</h3><p>Managed buyer and seller education, client communications, transaction workflows, CRM adoption and AI-assisted playbook development.</p></article>
+        <article><h3>Lakeville Police Department</h3><p>November 1998 - May 2024. Investigative assignments: March 2010 - May 2011. Detective, Electronic Crimes Unit: September 2016 - June 2017. Detective / Digital Forensic Examiner, assigned to the Dakota County Electronic Crimes Task Force: June 2017 - December 2021. Returned to patrol January 2022 - May 2024. Field Training Officer service: 2004-2023.</p></article>
+        <article><h3>University of Phoenix</h3><p>March 2007 - October 2025. Remote adjunct faculty member in criminal justice, concurrent with sworn law-enforcement service through May 2024. Earned Certified Advanced Facilitator status and repeated recognition for facilitation and instructional performance. <a href="evidence.html#AWARD-PHOENIX500">Evidence basis</a></p></article>
+        <article><h3>eXp Realty and Keller Williams</h3><p>June 2024 - June 2026. Managed buyer and seller education, client communications, transaction workflows, CRM adoption and AI-assisted playbook development. Closed $3.2M in residential sales during this completed career transition.</p></article>
         <article><h3>St. Cloud State University Public Safety</h3><p>Advanced from Security Officer to Lieutenant while completing a Criminal Justice degree. Built experience in training and later coordinated large-event security operations.</p></article>
       </div>
     </section>
